@@ -14,7 +14,7 @@ module.exports = {
         ['meta', { 'http-quiv': 'expires', cotent: '0' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ],
-    serviceWorker: true, // 是否开启 PWA
+    serviceWorker: false, // 是否开启 PWA
     base: '/', // 部署到github相关的配置
     markdown: {
         lineNumbers: true, // 代码块是否显示行号
