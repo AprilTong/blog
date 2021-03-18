@@ -2,7 +2,7 @@ module.exports = {
     // 网站标题
     title: 'April的记录小屋',
     // 网站描述
-    description: '热爱可抵岁月漫长-april',
+    description: '最好的时光，是现在。',
     keywords: 'April的博客，April',
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
