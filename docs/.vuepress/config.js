@@ -172,13 +172,13 @@ module.exports = {
                 text: '分类', // 默认文案 “标签”，
             },
         },
-        vssueConfig: {
-            platform: 'github',
-            owner: 'OWNER_OF_REPO',
-            repo: 'NAME_OF_REPO',
-            clientId: 'ab30b6b18ab55eb429a3',
-            clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
-        },
+        // vssueConfig: {
+        //     platform: 'github',
+        //     owner: 'OWNER_OF_REPO',
+        //     repo: 'NAME_OF_REPO',
+        //     clientId: 'ab30b6b18ab55eb429a3',
+        //     clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
+        // },
     },
     plugins: [
         [
