@@ -1,9 +1,8 @@
-// const path = require('path')
 module.exports = {
     // 网站标题
-    title: 'april的主页',
+    title: 'April的记录小屋',
     // 网站描述
-    description: 'April,Personal Website',
+    description: '热爱可抵岁月漫长-april',
     keywords: 'April的博客，April',
     // 注入到当前页面的 HTML <head> 中的标签
     head: [
@@ -13,6 +12,7 @@ module.exports = {
         ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache' }],
         ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache,must-revalidate' }],
         ['meta', { 'http-quiv': 'expires', cotent: '0' }],
+        ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ],
     serviceWorker: true, // 是否开启 PWA
     base: '/', // 部署到github相关的配置
@@ -20,14 +20,28 @@ module.exports = {
         lineNumbers: true, // 代码块是否显示行号
         toc: { includeLevel: [1, 2] },
     },
+    theme: 'reco',
     themeConfig: {
+        type: 'blog',
+        authorAvatar: '/images/photo.jpeg',
+        friendLink: [
+            {
+                title: 'vuepress-theme-reco',
+                desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+                logo: 'https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png',
+                link: 'https://vuepress-theme-reco.recoluan.com',
+            },
+        ],
+        mode: 'light',
+        author: 'AprilTong',
         nav: [
             // 导航栏配置
             { text: 'Home', link: '/' },
             { text: '关于前端', link: '/accumulate/' },
             { text: 'JavaScript练习', link: '/algorithm/' },
             { text: '诗和远方', link: '/others/' },
-            { text: 'github', link: 'https://github.com/AprilTong/blog.git' },
+            { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+            { text: 'github', link: 'https://github.com/AprilTong', icon: 'reco-github' },
         ],
         sidebar: {
             '/accumulate/': [
@@ -146,42 +160,68 @@ module.exports = {
             ],
         },
         sidebarDepth: 2,
+        subSidebar: 'auto',
         editLinks: true, // 默认是false，设置为true来启用
         editLinkText: '发现有错误?前往GitHub指正', // 指明编辑功能的文字内容
         docsRepo: 'https://github.com/AprilTong/blog',
         lastUpdated: '上次更新',
         smoothScroll: true, // 点击左侧侧边栏,页面滚动效果,smoothScroll 选项来启用页面滚动效果,true为启动,false禁用
-    },
-    plugin: {
-        'vuepress-plugin-auto-sidebar': {
-            // titleMode: 'titlecase', // 标题模式
-            collapsable: true, // 设置为true，开启折叠
+        blogConfig: {
+            tag: {
+                location: 4, // 在导航栏菜单中所占的位置，默认3
+                text: '分类', // 默认文案 “标签”，
+            },
+        },
+        vssueConfig: {
+            platform: 'github',
+            owner: 'OWNER_OF_REPO',
+            repo: 'NAME_OF_REPO',
+            clientId: 'ab30b6b18ab55eb429a3',
+            clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
         },
     },
-    // configureWebpack: () => {
-    //     const NODE_ENV = process.env.NODE_ENV
-    //     //判断是否是生产环境
-    //     if (NODE_ENV === 'production') {
-    //         return {
-    //             output: {
-    //                 publicPath: 'https://cdn.jsdelivr.net/gh/AprilTong/blog@gh-pages/',
-    //             },
-    //             resolve: {
-    //                 //配置路径别名
-    //                 alias: {
-    //                     public: path.resolve(__dirname, './public'),
-    //                 },
-    //             },
-    //         }
-    //     } else {
-    //         return {
-    //             resolve: {
-    //                 //配置路径别名
-    //                 alias: {
-    //                     public: path.resolve(__dirname, './public'),
-    //                 },
-    //             },
-    //         }
-    //     }
-    // },
+    plugins: [
+        [
+            //鼠标点击特效 先安装在配置， npm install vuepress-plugin-cursor-effects --save
+            'cursor-effects',
+            {
+                size: 3, // size of the particle, default: 2
+                shape: ['circle'], // shape of the particle, default: 'star'
+                zIndex: 999999999, // z-index property of the canvas, default: 999999999
+            },
+        ],
+        [
+            'vuepress-plugin-auto-sidebar',
+            {
+                // titleMode: 'titlecase', // 标题模式
+                collapsable: true, // 设置为true，开启折叠
+            },
+        ],
+        [
+            '@vuepress-reco/comments',
+            {
+                solution: 'vssue',
+                options: {
+                    title: 'vuepress-theme-reco',
+                    platform: 'github',
+                    owner: 'OWNER_OF_REPO',
+                    repo: 'NAME_OF_REPO',
+                    clientId: 'ab30b6b18ab55eb429a3',
+                    clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
+                },
+            },
+        ],
+        [
+            //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
+            '@vuepress-reco/vuepress-plugin-kan-ban-niang',
+            {
+                theme: ['blackCat'],
+                clean: true,
+                modelStyle: {
+                    left: '40px',
+                    bottom: '40px',
+                },
+            },
+        ],
+    ],
 }

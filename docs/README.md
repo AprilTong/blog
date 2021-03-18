@@ -1,8 +1,18 @@
 ---
 home: true
-heroImage: /images/photo.jpeg
+# heroImage: /images/photo.jpeg
+bgImage: /images/bg.jpg
+bgImageStyle: { height: '350px' }
+heroImageStyle:
+    {
+        maxHeight: '200px',
+        display: block,
+        margin: '6rem auto 1.5rem',
+        borderRadius: '50%',
+        boxShadow: '0 5px 18px rgba(0,0,0,0.2)',
+    }
 actionText: 查看我的学习笔记 →
-tagline: 最好的时光，是现在。
+tagline: 热爱可抵岁月漫长。
 actionLink: /accumulate/
 features:
     - title: 学习笔记
