@@ -198,19 +198,32 @@ module.exports = {
             },
         ],
         [
-            '@vuepress-reco/comments',
+            '@vssue/vuepress-plugin-vssue',
             {
-                solution: 'vssue',
-                options: {
-                    title: 'vuepress-theme-reco',
-                    platform: 'github',
-                    owner: 'OWNER_OF_REPO',
-                    repo: 'NAME_OF_REPO',
-                    clientId: 'ab30b6b18ab55eb429a3',
-                    clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
-                },
+                platform: 'github-v4', //v3的platform是github，v4的是github-v4
+                locale: 'zh', //语言
+                // 其他的 Vssue 配置
+                owner: 'AprilTong', //github账户名
+                repo: 'blog', //github一个项目的名称
+                clientId: 'ab30b6b18ab55eb429a3', //注册的Client ID
+                clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7', //注册的Client Secret
+                autoCreateIssue: true, // 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
             },
         ],
+        // [
+        //     '@vuepress-reco/comments',
+        //     {
+        //         solution: 'vssue',
+        //         options: {
+        //             title: 'vuepress-theme-reco',
+        //             platform: 'github',
+        //             owner: 'OWNER_OF_REPO',
+        //             repo: 'NAME_OF_REPO',
+        //             clientId: 'ab30b6b18ab55eb429a3',
+        //             clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
+        //         },
+        //     },
+        // ],
         [
             //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
             '@vuepress-reco/vuepress-plugin-kan-ban-niang',
