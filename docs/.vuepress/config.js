@@ -47,23 +47,27 @@ module.exports = {
             '/accumulate/': [
                 {
                     title: 'Css',
-                    path: '/accumulate/css/README.html',
+                    path: '/accumulate/css/',
                     collapsable: true,
+                    children: [],
                 },
                 {
                     title: 'javaScript',
-                    path: '/accumulate/js/README.html',
+                    path: '/accumulate/js/',
                     collapsable: true,
+                    children: [],
                 },
                 {
                     title: 'Vue',
-                    path: '/accumulate/vue/README.html',
+                    path: '/accumulate/vue/',
                     collapsable: true,
+                    children: [],
                 },
                 {
                     title: 'Webpack',
-                    path: '/accumulate/webpack/README.html',
+                    path: '/accumulate/webpack/',
                     collapsable: true,
+                    children: [],
                 },
             ],
         },
@@ -71,7 +75,9 @@ module.exports = {
         subSidebar: 'auto',
         editLinks: true, // 默认是false，设置为true来启用
         editLinkText: '发现有错误?前往GitHub指正', // 指明编辑功能的文字内容
+        repo: 'https://github.com/AprilTong/blog',
         docsRepo: 'https://github.com/AprilTong/blog',
+        repoLabel: '查看源码',
         lastUpdated: '上次更新',
         smoothScroll: true, // 点击左侧侧边栏,页面滚动效果,smoothScroll 选项来启用页面滚动效果,true为启动,false禁用
         blogConfig: {
