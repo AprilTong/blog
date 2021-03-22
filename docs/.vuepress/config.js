@@ -227,7 +227,7 @@ module.exports = {
                     // GitHub Application Client ID.
                     clientID: 'ab30b6b18ab55eb429a3',
                     // GitHub Application Client Secret.
-                    clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
+                    clientSecret: 'db93fb853870653f1274e90b93ac091eeac43379',
                     // GitHub repository. 存储评论的 repo
                     repo: 'https://github.com/AprilTong/blog',
                     // GitHub repository 所有者，可以是个人或者组织。
