@@ -49,113 +49,21 @@ module.exports = {
                     title: 'Css',
                     path: '/accumulate/css/',
                     collapsable: true,
-                    children: [
-                        {
-                            title: '基本使用概念',
-                            path: '/accumulate/css/common',
-                        },
-                        {
-                            title: 'object.fit属性',
-                            path: '/accumulate/css/1',
-                        },
-                        {
-                            title: 'css绘制圆形渐变进度条',
-                            path: '/accumulate/css/2',
-                        },
-                        {
-                            title: '媒体查询',
-                            path: '/accumulate/css/3',
-                        },
-                        {
-                            title: '文本溢出显示省略号',
-                            path: '/accumulate/css/6',
-                        },
-                        {
-                            title: 'CSS实现全站中文简繁转换',
-                            path: '/accumulate/css/7',
-                        },
-                        {
-                            title: 'autofoucs属性学习',
-                            path: '/accumulate/css/8',
-                        },
-                    ],
                 },
                 {
                     title: 'javaScript',
                     path: '/accumulate/js/',
                     collapsable: true,
-                    children: [
-                        {
-                            title: '跨域了解',
-                            path: '/accumulate/js/1',
-                        },
-                        {
-                            title: 'js数据类型',
-                            path: '/accumulate/js/2',
-                        },
-                        {
-                            title: '事件触发一次',
-                            path: '/accumulate/js/3',
-                        },
-                        {
-                            title: '获取数组中的最大值和最小值',
-                            path: '/accumulate/js/4',
-                        },
-                    ],
                 },
                 {
                     title: 'Vue',
                     path: '/accumulate/vue/',
                     collapsable: true,
-                    children: [
-                        {
-                            title: 'vue编译原理',
-                            path: '/accumulate/vue/1',
-                        },
-                        {
-                            title: '父子组件通信',
-                            path: '/accumulate/vue/2',
-                        },
-                        {
-                            title: 'vue 中被忽略但却很实用的',
-                            path: '/accumulate/vue/3',
-                        },
-                        {
-                            title: 'element-ui Upload 上传文件',
-                            path: '/accumulate/vue/4',
-                        },
-                        {
-                            title: 'vue+axios 以文件流的形式下载文件',
-                            path: '/accumulate/vue/5',
-                        },
-                        {
-                            title: 'element-ui 中 el-table 多列排序',
-                            path: '/accumulate/vue/6',
-                        },
-                        {
-                            title: 'vue 转换 es7 为 es5 语法',
-                            path: '/accumulate/vue/7',
-                        },
-                        {
-                            title: '结合ts的vue递归组件写法',
-                            path: '/accumulate/vue/8',
-                        },
-                        {
-                            title: 'vuex存储和本地存储的区别',
-                            path: '/accumulate/vue/9',
-                        },
-                    ],
                 },
                 {
                     title: 'Webpack',
                     path: '/accumulate/webpack/',
                     collapsable: true,
-                    children: [
-                        {
-                            title: 'webpack 中的 hash、chunkhash、contenthash 区别',
-                            path: '/accumulate/webpack/1',
-                        },
-                    ],
                 },
             ],
         },
