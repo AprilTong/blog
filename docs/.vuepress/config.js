@@ -47,22 +47,22 @@ module.exports = {
             '/accumulate/': [
                 {
                     title: 'Css',
-                    path: '/accumulate/css/',
+                    path: '/accumulate/css/README.html',
                     collapsable: true,
                 },
                 {
                     title: 'javaScript',
-                    path: '/accumulate/js/',
+                    path: '/accumulate/js/README.html',
                     collapsable: true,
                 },
                 {
                     title: 'Vue',
-                    path: '/accumulate/vue/',
+                    path: '/accumulate/vue/README.html',
                     collapsable: true,
                 },
                 {
                     title: 'Webpack',
-                    path: '/accumulate/webpack/',
+                    path: '/accumulate/webpack/README.html',
                     collapsable: true,
                 },
             ],
@@ -104,13 +104,6 @@ module.exports = {
             {
                 // titleMode: 'titlecase', // 标题模式
                 collapsable: true, // 设置为true，开启折叠
-            },
-        ],
-        [
-            '@vuepress/pwa',
-            {
-                serviceWorker: false,
-                updatePopup: false,
             },
         ],
         [
