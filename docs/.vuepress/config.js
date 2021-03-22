@@ -107,6 +107,13 @@ module.exports = {
             },
         ],
         [
+            '@vuepress/pwa',
+            {
+                serviceWorker: false,
+                updatePopup: false,
+            },
+        ],
+        [
             '@vuepress-reco/comments',
             {
                 solution: 'vssue',
