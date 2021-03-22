@@ -229,7 +229,7 @@ module.exports = {
                     // GitHub Application Client Secret.
                     clientSecret: 'db93fb853870653f1274e90b93ac091eeac43379',
                     // GitHub repository. 存储评论的 repo
-                    repo: 'https://github.com/AprilTong/blog',
+                    repo: 'AprilTong.github.io',
                     // GitHub repository 所有者，可以是个人或者组织。
                     owner: 'AprilTong',
                     // 设置语言(default: zh-CN)
