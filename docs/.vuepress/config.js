@@ -49,25 +49,113 @@ module.exports = {
                     title: 'Css',
                     path: '/accumulate/css/',
                     collapsable: true,
-                    children: [],
+                    children: [
+                        {
+                            title: '基本使用概念',
+                            path: '/accumulate/css/common',
+                        },
+                        {
+                            title: 'object.fit属性',
+                            path: '/accumulate/css/1',
+                        },
+                        {
+                            title: 'css绘制圆形渐变进度条',
+                            path: '/accumulate/css/2',
+                        },
+                        {
+                            title: '媒体查询',
+                            path: '/accumulate/css/3',
+                        },
+                        {
+                            title: '文本溢出显示省略号',
+                            path: '/accumulate/css/6',
+                        },
+                        {
+                            title: 'CSS实现全站中文简繁转换',
+                            path: '/accumulate/css/7',
+                        },
+                        {
+                            title: 'autofoucs属性学习',
+                            path: '/accumulate/css/8',
+                        },
+                    ],
                 },
                 {
                     title: 'javaScript',
                     path: '/accumulate/js/',
                     collapsable: true,
-                    children: [],
+                    children: [
+                        {
+                            title: '跨域了解',
+                            path: '/accumulate/js/1',
+                        },
+                        {
+                            title: 'js数据类型',
+                            path: '/accumulate/js/2',
+                        },
+                        {
+                            title: '事件触发一次',
+                            path: '/accumulate/js/3',
+                        },
+                        {
+                            title: '获取数组中的最大值和最小值',
+                            path: '/accumulate/js/4',
+                        },
+                    ],
                 },
                 {
                     title: 'Vue',
                     path: '/accumulate/vue/',
                     collapsable: true,
-                    children: [],
+                    children: [
+                        {
+                            title: 'vue编译原理',
+                            path: '/accumulate/vue/1',
+                        },
+                        {
+                            title: '父子组件通信',
+                            path: '/accumulate/vue/2',
+                        },
+                        {
+                            title: 'vue 中被忽略但却很实用的',
+                            path: '/accumulate/vue/3',
+                        },
+                        {
+                            title: 'element-ui Upload 上传文件',
+                            path: '/accumulate/vue/4',
+                        },
+                        {
+                            title: 'vue+axios 以文件流的形式下载文件',
+                            path: '/accumulate/vue/5',
+                        },
+                        {
+                            title: 'element-ui 中 el-table 多列排序',
+                            path: '/accumulate/vue/6',
+                        },
+                        {
+                            title: 'vue 转换 es7 为 es5 语法',
+                            path: '/accumulate/vue/7',
+                        },
+                        {
+                            title: '结合ts的vue递归组件写法',
+                            path: '/accumulate/vue/8',
+                        },
+                        {
+                            title: 'vuex存储和本地存储的区别',
+                            path: '/accumulate/vue/9',
+                        },
+                    ],
                 },
                 {
                     title: 'Webpack',
                     path: '/accumulate/webpack/',
                     collapsable: true,
-                    children: [],
+                    children: [
+                        {
+                            title: 'webpack 中的 hash、chunkhash、contenthash 区别',
+                            path: '/accumulate/webpack/1',
+                        },
+                    ],
                 },
             ],
         },
@@ -75,9 +163,7 @@ module.exports = {
         subSidebar: 'auto',
         editLinks: true, // 默认是false，设置为true来启用
         editLinkText: '发现有错误?前往GitHub指正', // 指明编辑功能的文字内容
-        repo: 'https://github.com/AprilTong/blog',
         docsRepo: 'https://github.com/AprilTong/blog',
-        repoLabel: '查看源码',
         lastUpdated: '上次更新',
         smoothScroll: true, // 点击左侧侧边栏,页面滚动效果,smoothScroll 选项来启用页面滚动效果,true为启动,false禁用
         blogConfig: {
@@ -86,14 +172,13 @@ module.exports = {
                 text: '分类', // 默认文案 “标签”，
             },
         },
-        vssueConfig: {
-            platform: 'github',
-            owner: 'AprilTong', //github账户名
-            repo: 'https://github.com/AprilTong/AprilTong.github.io', //github一个项目的名称
-            clientId: 'ab30b6b18ab55eb429a3',
-            clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
-            autoCreateIssue: true,
-        },
+        // vssueConfig: {
+        //     platform: 'github',
+        //     owner: 'OWNER_OF_REPO',
+        //     repo: 'NAME_OF_REPO',
+        //     clientId: 'ab30b6b18ab55eb429a3',
+        //     clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
+        // },
     },
     plugins: [
         [
@@ -113,19 +198,32 @@ module.exports = {
             },
         ],
         [
-            '@vuepress-reco/comments',
+            '@vssue/vuepress-plugin-vssue',
             {
-                solution: 'vssue',
-                options: {
-                    platform: 'github',
-                    owner: 'AprilTong', //github账户名
-                    repo: 'https://github.com/AprilTong/AprilTong.github.io', //github一个项目的名称
-                    clientId: 'ab30b6b18ab55eb429a3',
-                    clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
-                    autoCreateIssue: true,
-                },
+                platform: 'github-v4', //v3的platform是github，v4的是github-v4
+                locale: 'zh', //语言
+                // 其他的 Vssue 配置
+                owner: 'AprilTong', //github账户名
+                repo: 'blog', //github一个项目的名称
+                clientId: 'ab30b6b18ab55eb429a3', //注册的Client ID
+                clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7', //注册的Client Secret
+                autoCreateIssue: true, // 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
             },
         ],
+        // [
+        //     '@vuepress-reco/comments',
+        //     {
+        //         solution: 'vssue',
+        //         options: {
+        //             title: 'vuepress-theme-reco',
+        //             platform: 'github',
+        //             owner: 'OWNER_OF_REPO',
+        //             repo: 'NAME_OF_REPO',
+        //             clientId: 'ab30b6b18ab55eb429a3',
+        //             clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
+        //         },
+        //     },
+        // ],
         [
             //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
             '@vuepress-reco/vuepress-plugin-kan-ban-niang',
