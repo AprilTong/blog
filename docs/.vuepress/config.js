@@ -172,13 +172,6 @@ module.exports = {
                 text: '分类', // 默认文案 “标签”，
             },
         },
-        // vssueConfig: {
-        //     platform: 'github',
-        //     owner: 'OWNER_OF_REPO',
-        //     repo: 'NAME_OF_REPO',
-        //     clientId: 'ab30b6b18ab55eb429a3',
-        //     clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
-        // },
     },
     plugins: [
         [
@@ -210,20 +203,6 @@ module.exports = {
                 autoCreateIssue: true, // 自动创建评论，默认是false，最好开启，这样首次进入页面的时候就不用去点击创建评论的按钮了。
             },
         ],
-        // [
-        //     '@vuepress-reco/comments',
-        //     {
-        //         solution: 'vssue',
-        //         options: {
-        //             title: 'vuepress-theme-reco',
-        //             platform: 'github',
-        //             owner: 'OWNER_OF_REPO',
-        //             repo: 'NAME_OF_REPO',
-        //             clientId: 'ab30b6b18ab55eb429a3',
-        //             clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
-        //         },
-        //     },
-        // ],
         [
             //先安装在配置， npm install @vuepress-reco/vuepress-plugin-kan-ban-niang --save
             '@vuepress-reco/vuepress-plugin-kan-ban-niang',
@@ -233,6 +212,28 @@ module.exports = {
                 modelStyle: {
                     left: '40px',
                     bottom: '40px',
+                },
+            },
+        ],
+        [
+            'vuepress-plugin-mygitalk',
+            {
+                // 是否启用(关闭请设置为false)(default: true)
+                enable: true,
+                // 是否开启首页评论(default: true)
+                home: false,
+                // Gitalk配置
+                gitalk: {
+                    // GitHub Application Client ID.
+                    clientID: 'ab30b6b18ab55eb429a3',
+                    // GitHub Application Client Secret.
+                    clientSecret: 'aa5329f6a56a5ae8e125bc61a68245169ed2f2f7',
+                    // GitHub repository. 存储评论的 repo
+                    repo: 'https://github.com/AprilTong/blog',
+                    // GitHub repository 所有者，可以是个人或者组织。
+                    owner: 'AprilTong',
+                    // 设置语言(default: zh-CN)
+                    language: 'zh-CN',
                 },
             },
         ],

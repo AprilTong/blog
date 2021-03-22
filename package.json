@@ -18,6 +18,7 @@
     "@vuepress-reco/vuepress-plugin-comments": "^1.6.0",
     "vuepress": "^1.0.0",
     "vuepress-plugin-cursor-effects": "^1.0.2",
+    "vuepress-plugin-mygitalk": "^1.0.5",
     "vuepress-sidebar-atuo": "^1.0.3"
   },
   "devDependencies": {
