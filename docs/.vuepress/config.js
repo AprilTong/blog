@@ -26,6 +26,12 @@ module.exports = {
         authorAvatar: '/images/photo.jpeg',
         friendLink: [
             {
+                title: '阮一峰',
+                desc: '阮一峰的网络日志。',
+                logo: 'http://www.ruanyifeng.com/blog/images/person2_s.jpg',
+                link: 'http://www.ruanyifeng.com/blog/',
+            },
+            {
                 title: 'bran',
                 desc: '言念君子，温其如玉',
                 logo: 'https://bran-nie.com/favicon.ico',
