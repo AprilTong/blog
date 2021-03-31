@@ -26,10 +26,16 @@ module.exports = {
         authorAvatar: '/images/photo.jpeg',
         friendLink: [
             {
-                title: 'vuepress-theme-reco',
-                desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-                logo: 'https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png',
-                link: 'https://vuepress-theme-reco.recoluan.com',
+                title: 'bran',
+                desc: '言念君子，温其如玉',
+                logo: 'https://bran-nie.com/favicon.ico',
+                link: 'https://bran-nie.com/',
+            },
+            {
+                title: '布丁',
+                desc: '秋天到了，夏天的不甘该通通放下了。',
+                logo: 'https://zhaohongbo910.github.io/head.jpg',
+                links: 'https://zhaohongbo910.github.io/',
             },
         ],
         mode: 'light',
