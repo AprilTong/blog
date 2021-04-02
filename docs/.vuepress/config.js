@@ -43,6 +43,12 @@ module.exports = {
                 logo: 'https://zhaohongbo910.github.io/head.jpg',
                 links: 'https://zhaohongbo910.github.io/',
             },
+            {
+                title: '王世彪的博客',
+                desc: '积跬步以至千里，喜欢学习喜欢你。',
+                logo: 'https://gitee.com/wangshibiao/blog_picBed2/raw/master/images/20200806151030.png',
+                links: 'https://www.sofineday.com/',
+            },
         ],
         mode: 'light',
         author: 'AprilTong',
