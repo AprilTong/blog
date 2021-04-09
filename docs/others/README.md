@@ -58,9 +58,7 @@ sidebarDepth: 2
 
 一个小长假即将来临，最后一天，公司部门一半人都请假了。已经无心上班，只想尽快为祖国母亲庆生， 闲来无事看到了一个网站的好玩的灯笼 🏮，自己也试了试。8 天小长假，你是选择回家休息陪陪家人呢，还是携手三两好友或是你的他（她）去游玩看不同的风景呢。我打算去首都转转，去看看升国旗，去天安门广场溜达溜达。
 
-![灯笼](https://i.niupic.com/images/2020/09/30/8KHP.png)
-
-<div align='center'>它应该是一个 gif 图，下次好好学学怎么做 gif 图 😢</div>
+[![ct5Mon.gif](https://z3.ax1x.com/2021/04/09/ct5Mon.gif)](https://imgtu.com/i/ct5Mon)
 
 ![状态](https://i.niupic.com/images/2020/09/30/8KHS.png)
 
