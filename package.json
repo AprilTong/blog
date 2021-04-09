@@ -14,9 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vssue/api-github-v4": "^1.4.7",
-    "@vssue/vuepress-plugin-vssue": "^1.4.7",
-    "@vuepress-reco/vuepress-plugin-comments": "^1.6.0",
     "leancloud-storage": "^4.10.1",
     "moment": "^2.29.1",
     "valine": "^1.4.14",
