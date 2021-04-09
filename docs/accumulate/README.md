@@ -10,3 +10,4 @@ title: 日常积累
 -   [JavaScript](/accumulate/js/)
 -   [Vue](/accumulate/vue/)
 -   [Webpack](/accumulate/webpack/)
+-   [tool](/accumulate/tool)

@@ -19,7 +19,7 @@ module.exports = function(plop) {
                 type: 'list',
                 name: 'tag',
                 message: '请选择标签',
-                choices: ['CSS', 'Javascript', 'Vue', 'Webpack', '生活'],
+                choices: ['CSS', 'Javascript', 'Vue', 'Webpack', '生活', '工具'],
             },
         ],
         actions: (data) => {
