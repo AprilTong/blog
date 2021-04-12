@@ -23,22 +23,3 @@ features:
       details: 生活需要记录，每个人都是生活的艺术家。
 footer: MIT Licensed | Copyright © 2020-present aprilTong
 ---
-
-<!--
-:tada: :100:
-
-::: tip 提示
-this is a tip
-:::
-
-::: warning 注意
-this is a tip
-:::
-
-::: danger 警告
-this is a tip
-:::
-
-```js
-<script>console.log('Hello world')</script>
-``` -->
