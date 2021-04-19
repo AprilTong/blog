@@ -14,6 +14,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "busuanzi.pure.js": "^1.0.3",
     "leancloud-storage": "^4.10.1",
     "moment": "^2.29.1",
     "valine": "^1.4.14",

@@ -13,6 +13,7 @@ module.exports = {
         ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache,must-revalidate' }],
         ['meta', { 'http-quiv': 'expires', cotent: '0' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+        ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
     ],
     serviceWorker: false, // 是否开启 PWA
     base: '/', // 部署到github相关的配置
@@ -239,6 +240,19 @@ module.exports = {
                     owner: 'AprilTong',
                     // 设置语言(default: zh-CN)
                     language: 'zh-CN',
+                },
+            },
+        ],
+        [
+            //图片放大插件 先安装在配置， npm install @vuepress\plugin-medium-zoom --save
+            '@vuepress/plugin-medium-zoom',
+            {
+                selector: '.page img',
+                delay: 1000,
+                options: {
+                    margin: 24,
+                    background: 'rgba(25,18,25,0.9)',
+                    scrollOffset: 40,
                 },
             },
         ],
