@@ -13,7 +13,6 @@ module.exports = {
         ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache,must-revalidate' }],
         ['meta', { 'http-quiv': 'expires', cotent: '0' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-        ['meta', { name: 'referrer', content: 'no-referrer-when-downgrade' }],
     ],
     serviceWorker: false, // 是否开启 PWA
     base: '/', // 部署到github相关的配置
