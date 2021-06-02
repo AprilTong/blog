@@ -9,3 +9,4 @@ title: 目录
 ## 小工具分享
 
 -   [告别 CV 大法，plop 生成模板文件](/accumulate/tool/1.html)
+-   [html 静态网页进行真机调试](/accumulate/tool/2.html)
