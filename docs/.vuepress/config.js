@@ -220,28 +220,28 @@ module.exports = {
                 },
             },
         ],
-        [
-            'vuepress-plugin-mygitalk',
-            {
-                // 是否启用(关闭请设置为false)(default: true)
-                enable: true,
-                // 是否开启首页评论(default: true)
-                home: false,
-                // Gitalk配置
-                gitalk: {
-                    // GitHub Application Client ID.
-                    clientID: 'ab30b6b18ab55eb429a3',
-                    // GitHub Application Client Secret.
-                    clientSecret: 'db93fb853870653f1274e90b93ac091eeac43379',
-                    // GitHub repository. 存储评论的 repo
-                    repo: 'AprilTong.github.io',
-                    // GitHub repository 所有者，可以是个人或者组织。
-                    owner: 'AprilTong',
-                    // 设置语言(default: zh-CN)
-                    language: 'zh-CN',
-                },
-            },
-        ],
+        // [
+        //     'vuepress-plugin-mygitalk',
+        //     {
+        //         // 是否启用(关闭请设置为false)(default: true)
+        //         enable: true,
+        //         // 是否开启首页评论(default: true)
+        //         home: false,
+        //         // Gitalk配置
+        //         gitalk: {
+        //             // GitHub Application Client ID.
+        //             clientID: 'ab30b6b18ab55eb429a3',
+        //             // GitHub Application Client Secret.
+        //             clientSecret: 'db93fb853870653f1274e90b93ac091eeac43379',
+        //             // GitHub repository. 存储评论的 repo
+        //             repo: 'AprilTong.github.io',
+        //             // GitHub repository 所有者，可以是个人或者组织。
+        //             owner: 'AprilTong',
+        //             // 设置语言(default: zh-CN)
+        //             language: 'zh-CN',
+        //         },
+        //     },
+        // ],
         [
             //图片放大插件 先安装在配置， npm install @vuepress\plugin-medium-zoom --save
             '@vuepress/plugin-medium-zoom',
@@ -253,6 +253,30 @@ module.exports = {
                     background: 'rgba(25,18,25,0.9)',
                     scrollOffset: 40,
                 },
+            },
+        ],
+        [
+            'vuepress-plugin-comment',
+            {
+                choosen: 'valine',
+                // options选项中的所有参数，会传给Valine的配置
+                options: {
+                    el: '#valine-vuepress-comment',
+                    appId: 'FznJOMagtkw64QLRiC0jbItB-gzGzoHsz',
+                    appKey: 'vUdn3KYiPCVR0sztolpWBPBF',
+                },
+            },
+        ],
+        [
+            '@vssue/vuepress-plugin-vssue',
+            {
+                // 设置 `platform` 而不是 `api`
+                platform: 'github',
+                locale: 'zh',
+                repo: 'AprilTong.github.io', // 用来存储评论的 仓库
+                owner: 'AprilTong', //对应 仓库 的拥有者帐号或者团队
+                clientId: 'ab30b6b18ab55eb429a3', // OAuth App 的 client id
+                clientSecret: 'db93fb853870653f1274e90b93ac091eeac43379', // OAuth App 的 client secret 著作权归「程序员成长指北-koala」所有。
             },
         ],
     ],
