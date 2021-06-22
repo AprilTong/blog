@@ -264,20 +264,22 @@ module.exports = {
                     el: '#valine-vuepress-comment',
                     appId: 'FznJOMagtkw64QLRiC0jbItB-gzGzoHsz',
                     appKey: 'vUdn3KYiPCVR0sztolpWBPBF',
+                    visitor: true, // 阅读量统计
+                    avatar: 'monsterid', // 头像
                 },
             },
         ],
-        [
-            '@vssue/vuepress-plugin-vssue',
-            {
-                // 设置 `platform` 而不是 `api`
-                platform: 'github',
-                locale: 'zh',
-                repo: 'AprilTong.github.io', // 用来存储评论的 仓库
-                owner: 'AprilTong', //对应 仓库 的拥有者帐号或者团队
-                clientId: 'ab30b6b18ab55eb429a3', // OAuth App 的 client id
-                clientSecret: 'db93fb853870653f1274e90b93ac091eeac43379', // OAuth App 的 client secret 著作权归「程序员成长指北-koala」所有。
-            },
-        ],
+        // [
+        //     '@vssue/vuepress-plugin-vssue',
+        //     {
+        //         // 设置 `platform` 而不是 `api`
+        //         platform: 'github',
+        //         locale: 'zh',
+        //         repo: 'AprilTong.github.io', // 用来存储评论的 仓库
+        //         owner: 'AprilTong', //对应 仓库 的拥有者帐号或者团队
+        //         clientId: 'ab30b6b18ab55eb429a3', // OAuth App 的 client id
+        //         clientSecret: 'db93fb853870653f1274e90b93ac091eeac43379', // OAuth App 的 client secret 著作权归「程序员成长指北-koala」所有。
+        //     },
+        // ],
     ],
 }
