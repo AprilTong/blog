@@ -14,8 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vssue/api-github-v3": "^1.4.7",
-    "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "@vuepress/plugin-medium-zoom": "^1.8.2",
     "busuanzi.pure.js": "^1.0.3",
     "leancloud-storage": "^4.10.1",
@@ -30,7 +28,6 @@
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
     "plop": "^2.7.4",
     "vuepress-plugin-auto-sidebar": "^1.5.0",
-    "vuepress-plugin-comment": "^0.7.3",
     "vuepress-theme-reco": "^1.6.6"
   }
 }
