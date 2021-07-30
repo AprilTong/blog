@@ -20,3 +20,4 @@ title: 目录
 -   [关于 FormData 那些](./14.html)
 -   [前端导出 excel](./15.html)
 -   [document.cookie 无法获取到 cookie](./16.html)
+-   [new 操作符](./17.html)
