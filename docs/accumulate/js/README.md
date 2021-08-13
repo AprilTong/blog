@@ -21,3 +21,4 @@ title: 目录
 -   [前端导出 excel](./15.html)
 -   [document.cookie 无法获取到 cookie](./16.html)
 -   [new 操作符](./17.html)
+-   [JavaScript 的继承](./18.html)
