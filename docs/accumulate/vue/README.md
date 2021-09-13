@@ -17,3 +17,5 @@
 -   [vue 实现企业微信扫码登陆](/accumulate/vue/11.html)
 -   [element-table 表格多选](/accumulate/vue/12.html)
 -   [webpack4+vue2 从零开始搭建项目](/accumulate/vue/13.html)
+    <!-- -   [vu3+vite项目搭建]() -->
+-   [vue3 的一些知识点](/accumulate/vue/14.html)
