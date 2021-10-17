@@ -11,3 +11,4 @@ title: 日常积累
 -   [Vue](/accumulate/vue/)
 -   [Webpack](/accumulate/webpack/)
 -   [tool](/accumulate/tool)
+-   [electron](/accumulate/electron/)
