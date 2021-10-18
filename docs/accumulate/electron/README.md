@@ -27,6 +27,7 @@ vue add electron-builder
 ## 初始项目目录
 
 渲染进程的页面交给了 vue 进行渲染，开发过程和我们平时使用 vue 开发 web 页面没啥区别，而 electron 主进程的代码是放在 background.js 中。
+![如图所示](https://raw.githubusercontent.com/AprilTong/image/master/img/20211018183034.png)
 
 ## 开发中遇到的问题
 
@@ -69,7 +70,7 @@ module.exports = {
             preload: 'src/utils/preload.js',
         },
     },
-};
+}
 ```
 
 2. 在主进程中
@@ -78,23 +79,23 @@ module.exports = {
 // 将preload的文件路径保存在全局变量中
 global.shareObject = {
     preloadPath: path.join(__dirname, 'preload.js'),
-};
+}
 const win = new BrowserWindow({
     webPreferences: {
         preload: path.join(__dirname, 'preload.js'),
     },
-});
+})
 ```
 
 3. 渲染进程中使用
 
 ```js
-import { getGlobal } from '@electron/remote';
-import { computed } from 'vue';
+import { getGlobal } from '@electron/remote'
+import { computed } from 'vue'
 // preload不支持http协议，加载本地文件需强制可强制写为file协议
 const preloadPath = computed(() => {
-    return 'file://' + getGlobal('shareObject').preloadPath;
-});
+    return 'file://' + getGlobal('shareObject').preloadPath
+})
 ```
 
 -   **electron 图标打包**
@@ -117,7 +118,7 @@ module.exports = {
             },
         },
     },
-};
+}
 ```
 
 1. ico 图标生成网站（[链接](http://www.ico51.cn/)）
