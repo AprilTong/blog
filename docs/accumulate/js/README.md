@@ -22,4 +22,6 @@ title: 目录
 -   [document.cookie 无法获取到 cookie](./16.html)
 -   [new 操作符](./17.html)
 -   [JavaScript 的继承](./18.html)
+-   [JavaScript 的类型转换](./19.html)
 -   [JS 树结构操作](./20.html)
+-   [生成验证码](./21.html)
