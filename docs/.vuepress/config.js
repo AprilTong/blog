@@ -49,6 +49,12 @@ module.exports = {
                 logo: 'https://gitee.com/wangshibiao/blog_picBed2/raw/master/images/20200806151030.png',
                 link: 'https://www.sofineday.com/',
             },
+            {
+                title: '羊先生的博客',
+                desc: '愿你雨天有伞，深夜有灯，一生温暖纯良，不舍爱与自由，与尘世的万千美好都能不期而遇。',
+                logo: 'https://avatars.githubusercontent.com/u/22078920?v=4',
+                link: 'https://www.vipbic.com/',
+            },
         ],
         mode: 'light',
         author: 'AprilTong',
