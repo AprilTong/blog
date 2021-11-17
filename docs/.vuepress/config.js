@@ -55,6 +55,13 @@ module.exports = {
                 logo: 'https://avatars.githubusercontent.com/u/22078920?v=4',
                 link: 'https://www.vipbic.com/',
             },
+            {
+                title: 'itclanCoder',
+                desc: '书以启智,技于谋生,活出斜杠',
+                logo:
+                    'https://p6-passport.byteacctimg.com/img/user-avatar/6de198db0de5c89d182bdc89d9e5dd51~300x300.image',
+                link: 'https://coder.itclan.cn/',
+            },
         ],
         mode: 'light',
         author: 'AprilTong',
