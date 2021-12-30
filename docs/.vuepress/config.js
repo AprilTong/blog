@@ -62,6 +62,12 @@ module.exports = {
                     'https://p6-passport.byteacctimg.com/img/user-avatar/6de198db0de5c89d182bdc89d9e5dd51~300x300.image',
                 link: 'https://coder.itclan.cn/',
             },
+            {
+                title: '道道里',
+                desc: '宇宙真的好谦虚啊，明明拥有一切，却叫太空',
+                logo: 'https://daodaolee.cn/avatar.png',
+                link: 'https://daodaolee.cn/',
+            },
         ],
         mode: 'light',
         author: 'AprilTong',
