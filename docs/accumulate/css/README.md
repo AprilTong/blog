@@ -16,3 +16,4 @@
 -   [父元素设置 min-height 子元素高度设置百分数](/accumulate/css/10.html)
 -   [父元素设置 min-height 子元素高度设置百分数](/accumulate/css/10.html)
 -   [css 属性规范](/accumulate/css/11.html)
+-   [CSS 伪类:not()](/accumulate/css/12.html)
