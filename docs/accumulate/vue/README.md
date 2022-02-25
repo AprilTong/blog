@@ -19,3 +19,4 @@
 -   [webpack4+vue2 从零开始搭建项目](/accumulate/vue/13.html)
     <!-- -   [vu3+vite项目搭建]() -->
 -   [vue3 的一些知识点](/accumulate/vue/14.html)
+-   [web 应用接入企业微信前端处理](/accumulate/vue/15.html)
