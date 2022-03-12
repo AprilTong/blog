@@ -1,4 +1,4 @@
----
+<!-- ---
 title: 目录
 ---
 
@@ -12,4 +12,4 @@ title: 目录
 -   [html 静态网页进行真机调试](/accumulate/tool/2.html)
 -   [你还不知道用 nvm 管理 node 吗](/accumulate/tool/3.html)
 -   [创建谷歌插件](/accumulate/tool/4.html)
--   [创建一个简单的脚手架](/accumulate/tool/5.html)
+-   [创建一个简单的脚手架](/accumulate/tool/5.html) -->

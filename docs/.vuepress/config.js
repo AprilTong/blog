@@ -74,8 +74,8 @@ module.exports = {
         nav: [
             // 导航栏配置
             { text: 'Home', link: '/' },
-            { text: '关于前端', link: '/accumulate/' },
-            { text: 'JavaScript练习', link: '/algorithm/' },
+            // { text: '关于前端', link: '/accumulate/' },
+            // { text: 'JavaScript练习', link: '/algorithm/' },
             { text: '诗和远方', link: '/others/' },
             { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
             { text: 'github', link: 'https://github.com/AprilTong', icon: 'reco-github' },
@@ -302,4 +302,4 @@ module.exports = {
         //     },
         // ],
     ],
-}
+};
