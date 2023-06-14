@@ -78,6 +78,7 @@ module.exports = {
             // { text: 'JavaScript练习', link: '/algorithm/' },
             { text: '诗和远方', link: '/others/' },
             { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+            { text: 'vue3-element-admin', link: 'https://github.com/youlaitech/vue3-element-admin' },
             { text: 'github', link: 'https://github.com/AprilTong', icon: 'reco-github' },
         ],
         sidebar: {
@@ -302,4 +303,4 @@ module.exports = {
         //     },
         // ],
     ],
-};
+}
