@@ -46,7 +46,7 @@ module.exports = {
             {
                 title: '王世彪的博客',
                 desc: '积跬步以至千里，喜欢学习喜欢你。',
-                logo: 'https://gitee.com/wangshibiao/blog_picBed2/raw/master/images/20200806151030.png',
+                logo: 'https://pic-bed.sofineday.com/pic.red/blog_picBed2/raw/branch/master/images/20200806151030.png',
                 link: 'https://www.sofineday.com/',
             },
             {
@@ -61,12 +61,6 @@ module.exports = {
                 logo:
                     'https://p6-passport.byteacctimg.com/img/user-avatar/6de198db0de5c89d182bdc89d9e5dd51~300x300.image',
                 link: ' https://coder.itclan.net/',
-            },
-            {
-                title: '道道里',
-                desc: '宇宙真的好谦虚啊，明明拥有一切，却叫太空',
-                logo: 'https://daodaolee.cn/avatar.png',
-                link: 'https://daodaolee.cn/',
             },
         ],
         mode: 'light',
