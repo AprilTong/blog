@@ -19,8 +19,6 @@
         "leancloud-storage": "^4.10.1",
         "moment": "^2.29.1",
         "valine": "^1.4.14",
-        "vue": "^2.7.14",
-        "vue-server-renderer": "^2.7.14",
         "vuepress": "^1.9.8",
         "vuepress-plugin-cursor-effects": "^1.1.6",
         "vuepress-plugin-mygitalk": "^1.0.5",
