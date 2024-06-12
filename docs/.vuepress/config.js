@@ -13,6 +13,14 @@ module.exports = {
         ['meta', { 'http-quiv': 'pragma', cotent: 'no-cache,must-revalidate' }],
         ['meta', { 'http-quiv': 'expires', cotent: '0' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+        [
+            'script',
+            {
+                async: true,
+                src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5657580085589011',
+                crossorigin: 'anonymous',
+            },
+        ],
     ],
     serviceWorker: false, // 是否开启 PWA
     base: '/', // 部署到github相关的配置
@@ -58,8 +66,7 @@ module.exports = {
             {
                 title: 'itclanCoder',
                 desc: '书以启智,技于谋生,活出斜杠',
-                logo:
-                    'https://p6-passport.byteacctimg.com/img/user-avatar/6de198db0de5c89d182bdc89d9e5dd51~300x300.image',
+                logo: 'https://p6-passport.byteacctimg.com/img/user-avatar/6de198db0de5c89d182bdc89d9e5dd51~300x300.image',
                 link: ' https://coder.itclan.net/',
             },
             {
