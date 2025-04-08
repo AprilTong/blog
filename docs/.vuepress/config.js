@@ -42,8 +42,8 @@ module.exports = {
             {
                 title: 'bran',
                 desc: '言念君子，温其如玉',
-                logo: 'https://bran-nie.com/favicon.ico',
-                link: 'https://bran-nie.com/',
+                logo: 'https://bran-nie.cn/favicon.ico',
+                link: 'https://bran-nie.cn/',
             },
             {
                 title: '布丁',
